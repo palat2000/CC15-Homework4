@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: rgb(86, 166, 126);
+  background: linear-gradient(
+    180deg,
+    rgba(86, 166, 126, 1) 18%,
+    rgba(0, 48, 91, 1) 100%
+  );
+  font-family: 'Roboto', sans-serif;
+}
+nav {
+  height: 70px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+nav > a {
+  display: block;
+  text-decoration: none;
+  color: lightgray;
+  padding-right: 100px;
+}
+main {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+.container > h1 {
+  font-size: 70px;
+  width: 600px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: lightgray;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+.download {
+  width: 30%;
+}
+.download > p {
+  text-align: center;
+  margin-bottom: 10px;
+  color: lightgray;
+  letter-spacing: 5px;
+}
+.bar {
+  height: 10px;
+  background-color: lightgray;
+  box-shadow: 0 2px 5px black;
+}
+.insite-bar {
+  background-color: lightblue;
+  height: 10px;
+  width: 80%;
+}
+.percent {
+  display: flex;
+  justify-content: space-between;
+  > p {
+    margin: 10px 0;
+    color: lightgray;
+  }
+}
+button {
+  border: none;
+  background-color: lightblue;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.icon {
+  padding-top: 40px;
+  display: flex;
+  gap: 15px;
+  > div {
+    border: 3px solid lightgray;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    position: relative;
+    > i {
+      font-size: 35px;
+      position: relative;
+      top: 9px;
+    }
+  }
+}
+footer {
+  width: 90%;
+  margin: auto;
+  opacity: 0.7;
+  > p {
+    text-align: center;
+    color: lightgray;
+    margin: 10px 0;
+  }
+}
